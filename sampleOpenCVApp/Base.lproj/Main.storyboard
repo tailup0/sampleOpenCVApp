@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sampleOpenCVApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img" translatesAutoresizingMaskIntoConstraints="NO" id="SXB-cP-iyy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="334"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gm-1c-iPG">
+                                <rect key="frame" x="140" y="374" width="94" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Gm-1c-iPG" secondAttribute="height" multiplier="23:15" id="ipN-VQ-1J2"/>
+                                </constraints>
+                                <state key="normal" title="change"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="flR-9E-ifP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SXB-cP-iyy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ASo-fR-MtU"/>
+                            <constraint firstItem="SXB-cP-iyy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BgB-Xk-VRf"/>
+                            <constraint firstItem="SXB-cP-iyy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1/2" id="Pxt-ZU-WZb"/>
+                            <constraint firstItem="0Gm-1c-iPG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/4" id="Rbj-rI-Im7"/>
+                            <constraint firstItem="0Gm-1c-iPG" firstAttribute="top" secondItem="SXB-cP-iyy" secondAttribute="bottom" constant="40" id="U1p-mF-G6P"/>
+                            <constraint firstItem="SXB-cP-iyy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bCF-UF-yxd"/>
+                            <constraint firstItem="0Gm-1c-iPG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tiO-GK-L34"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myImage" destination="SXB-cP-iyy" id="fpo-k0-Eia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img" width="640" height="426"/>
+    </resources>
+</document>
