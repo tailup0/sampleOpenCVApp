@@ -1,5 +1,10 @@
 # Swift Sample OpenCV App
 
+### Install
+```
+$ pod install
+```
+
 ### Image
 |Before|After|
 |---|---|
